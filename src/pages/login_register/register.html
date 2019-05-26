@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../../../styles/pages/login_register/login_register.css" />
+	</head>
+
+	<body>
+		<!--头-->
+		<div class="header">
+			<div class="w1190">
+				<div class="logo fl" href="#">
+					<img src="../../../img/feelunique logo.jpg" />
+				</div>
+
+				<ul class="service fr">
+					<li class="email">
+						<span>中文客服邮箱：</span>
+						<a href="#" class="online-kf">china@feelunique.com</a>
+
+					</li>
+					<li class="help">
+						<a href="#">有疑问？点这里！</a>
+					</li>
+					<li class="china">
+						<span>
+							<img src="../../../img/footer/china.png"/>
+						</span>
+						<a href="#">中国</a>
+					</li>
+					<li class="exchange">
+						<a class="select_currency" id="select_currency" href="#">GBP £</a>
+						<span class="down_solid">
+							<img src="../../../img/down_solid.png"/>
+						</span>
+						<ul class="erl_la_down_menu">
+							<li id="tb-ma">
+								<span>今日参考汇率</span>
+								<span class="notic_down_solid">
+									<img src="../../../img/notice.png"/>
+								</span>
+								<div class="tb_parities">
+									<span style="display:none">
+                                	Feelunique网站标价统一以英镑为基准，包括人民币的其他币种汇率仅供参考；顾客实际支付的汇率及金额，以各支付机构的实时汇率转换为准。
+                                	</span>
+								</div>
+							</li>
+							<li id="tb-wish">
+								1英镑=8.87人民币
+							</li>
+						</ul>
+					</li>
+					<li class="bag">
+						<img class="_bag" src="../../../img/bag.png" alt="" />
+						<a href="#">BAG</a>
+						<img class="zero" src="../../../img/0.png" />
+					</li>
+					<li class="notice">
+						<a href="#" target="_blank">消费者告知书</a>
+					</li>
+				</ul>
+
+			</div>
+		</div>
+
+		<div class="main clearfix register_main">
+			<div class="register_show _show">
+				<div class="main_inner register_inner">
+					<form action="../login_register/login.html" method="">
+						<h3>
+							<span>新用户注册</span>
+							<a href="../login_register/login.html">我已注册，现在就登录</a>
+						</h3>
+						<div class="_user _icon">
+							<input type="text" id="username" value="" placeholder="请填写常用手机" />
+							<span class="title_one">手机号码</span>
+							<div id="user_error" class="_error"></div>
+						</div>
+						<div class="_v_code _icon">
+							<input type="text" name="" id="v_code" value="" placeholder="请输入验证码" />
+							<canvas id="canvas" width="100" height="39"></canvas>
+							<span class="title_one">验证码</span>
+							<div id="v_code_error" class="_error"></div>
+						</div>
+						<!--<div class="_p_code _icon">
+							<div class="p_code_inner">
+								<input type="text" name="" id="phone_code" value="" placeholder="请输入手机验证码" />
+								<a href="#" id="get_phone_code">获取验证码</a>
+								<span class="title_one">手机验证码</span>
+							</div>-->
+
+							<!--<div id="phone_code_error" class="_error"></div>
+						</div>-->
+						<div class="_password _icon">
+							<input type="password" id="password" name="" placeholder="6-20个数字、字母或符号区分大小写" />
+							<span class="title_one">请设置密码</span>
+							<div id="password_error" class="_error"></div>
+						</div>
+						<div class="_r_password _icon">
+							<input type="password" id="r_password" name="" placeholder="请输入确认密码" />
+							<span class="title_one">确认密码</span>
+							<div id="r_password_error" class="_error"></div>
+						</div>
+
+						<div class="agree">
+							<input type="checkbox" name="" id="_agree" value="" checked="checked" />
+							<p>是的，我已阅读并同意</p>
+							<a href="#">《服务条款》</a>
+							<p>及</p>
+							<a href="#">《隐私条款》</a>
+						</div>
+
+						<input id="user_register" type="submit" value="立即注册" />
+
+						<div class="quick_login">
+							<p>快捷登录方式</p>
+							<a class="q_first" href="#"><img src="../../../img/login-register/qq.png" /></a>
+							<a href="#"><img src="../../../img/login-register/weibo.png" /></a>
+							<a href="#"><img src="../../../img/login-register/zhifubao.png" /></a>
+							<a href="#"><img src="../../../img/login-register/yinlian.png" /></a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<div class="u_footer">
+			<p>
+				feelunique.com © 2005-2019. All rights reserved
+			</p>
+		</div>
+	</body>
+	<script src="../../static/scripts/require.js" data-main="register.js" type="text/javascript" charset="utf-8"></script>
+
+</html>

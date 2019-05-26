@@ -1,0 +1,128 @@
+ @import "../base";
+ .footer {
+     padding-top: 20px;
+     padding-bottom: 10px;
+     background: #444;
+     font-size: 13px;
+     color: #ccc;
+     height: 294px;
+     .footer1 {
+         .footer_col {
+             float: left;
+             width: 180px;
+             margin-right: 60px;
+             h6 {
+                 margin: 0 0 5px;
+                 padding: 0 0 5px;
+                 border-bottom: 1px solid #666;
+                 font-weight: 400;
+                 font-size: 14px;
+                 text-transform: uppercase;
+             }
+             ul {
+                 float: left;
+                 li {
+                     line-height: 26px;
+                     a {
+                         color: #ccc;
+                     }
+                 }
+                 li:hover{
+                     text-decoration: underline;
+                     a:hover{
+                         color:#fff;
+                     }
+                 }
+             }
+             .ul_last {
+                 margin-left: 160px;
+             }
+         }
+         .col_last {
+             width: 470px;
+             margin-right: 0;
+         }
+     }
+     .footer2 {
+         padding-bottom: 20px;
+         font-size: 14px;
+         color: #ccc;
+         background: #444;
+         .focus_us {
+             float: left;
+             margin-top: 28px;
+             li {
+                 float: left;
+                 a {
+                     display: inline-block;
+                     width: 30px;
+                     height: 30px;
+                     margin-right: 5px;
+                     img {
+                         width: 30px;
+                         height: 30px;
+                     }
+                 }
+             }
+             .weixin {
+                 position: relative;
+                 a {
+                     .img_code {
+                         position: absolute;
+                         left: 0;
+                         top: 35px;
+                         z-index: 1010;
+                         width: 100px;
+                         height: 100px;
+                     }
+                 }
+             }
+         }
+         .pay_type {
+             float: right;
+             height: 40px;
+             margin-top: 20px;
+             li {
+                 float: left;
+                 a {
+                     display: block;
+                     height: 40px;
+                     width: 84px;
+                     background: url(../../../../img/all_little.png) 0 -903px no-repeat;
+                 }
+             }
+         }
+     }
+ }
+ 
+ .footer3 {
+     line-height: 60px;
+     border-top: 1px solid #000;
+     background: #2d2d2d;
+     font-size: 0;
+     .w1190 {
+         ul {
+             li {
+                 display: inline-block;
+                 margin-right: 20px;
+                 font-size: 12px;
+                 a {
+                     color: #ccc;
+                 }
+                 a:hover {
+                     text-decoration: underline;
+                 }
+             }
+         }
+     }
+ }
+ 
+ .bottom-copyright {
+     line-height: 30px;
+     padding-bottom: 5px;
+     border-top: 1px solid #666;
+     background: #2d2d2d;
+     font-size: 12px;
+     color: #ccc;
+     text-align: center;
+ }

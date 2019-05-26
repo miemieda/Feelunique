@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../../styles/pages/cart/cart.css" />
+	</head>
+
+	<body>
+		<div id="header"></div>
+		<div class="container">
+			<div class="container_inner">
+				<ul class="_top">
+					<li class="_home">
+						<a href="../index/index.html">
+							<img src="../../../img/product_details/home.png" />
+						</a>
+					</li>
+					<li class="_dic">
+						<img src="../../../img/product_details/right.png" />
+					</li>
+					<li>
+						<a href="#">My Shopping Bag</a>
+					</li>
+				</ul>
+
+				<div class="cart_main fl">
+					<div class="cart_title_all">
+						<h3 class="cart_title fl">我的购物篮</h3>
+						<p class="cart_text fl">香港仓强势登陆，发货后3-7天到手！英国仓直邮全球，预计7-14天到货。</p>
+					</div>
+
+					<ul class="cart_list_title">
+						<li class="cart_store">
+						</li>
+						<li class="pro_into">商品信息</li>
+						<li class="price_one">单价</li>
+						<li class="_num">数量</li>
+						<li class="price_all">小计</li>
+						<li class="_opp">操作</li>
+					</ul>
+					<div id="all_show_">
+
+					</div>
+
+				</div>
+
+				<div class="right_banner fr">
+					<img src="../../../img/cart/banner1.jpg" alt="" />
+					<img src="../../../img/cart/banner2.png" alt="" />
+				</div>
+			</div>
+		</div>
+	</body>
+	
+	<script src="../../scripts/libs/jquery-2.0.3.js"></script>
+	<script>
+		$("#header").load("../header/header.html");
+	</script>
+	
+	<script src="../../static/scripts/require.js" data-main="cart.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/html" id="cart_show">
+		<% let all_price = 0; %>
+		<% for(var i = 0; i<data.length; i++){%>
+		<ul class="pro_one">
+
+			<li class="_select">
+				<input type="checkbox" name="" id="" value="" />
+			</li>
+			<input class="_pID" style="display: none;" value="<%=data[i].pId%>"/>
+			<li class="pro_img_text">
+				<a class="_img fl" href="../product_details/product_details.html">
+					<img src="<%=data[i].pImg%>" alt="" />
+				</a>
+				<a class="_text fl" href="#">
+					<%=data[i].pName%>
+				</a>
+			</li>
+			<li class="_price_">
+				<p class="current-price">
+					<%=data[i].pPrice%>
+				</p>
+			</li>
+			<li class="num_show">
+				<span class="_sub fl"></span>
+				<input class="num_change fl" type="text" name="" id="" value="<%=data[i].count%>" />
+				<span class="plus fl"></span>
+			</li>
+			</li>
+			<%let _price = parseFloat(data[i].pPrice.match(/\d+\.?\d*/));%>
+			<li class="_price_all">
+				<p>
+					<%=(_price*parseInt(data[i].count)).toFixed(2)%>
+				</p>
+				<% all_price += _price*parseInt(data[i].count);%>
+			</li>
+			<li class="_opp_">
+				<a href="#" class="_delete">删除</a>
+				<a href="#">收藏</a>
+			</li>
+		</ul>
+		<%}%>
+		<div class="cart-foot">
+			<p class="store-settlement-tips left">折后满<em>60英镑</em>即享全球免邮</p>
+		</div>
+
+		<div class="_all_delete">
+			<input type="checkbox" name="" id="" value="" />全选
+			<a href="#">删除所有</a>
+		</div>
+
+		<div class="cart-checkout">
+			<div class="checkout-group">
+				<span class="group-label"><em><%=data.length%>件</em>商品，商品总金额：</span>
+				<span class="group-text">£<%=all_price%></span>
+			</div>
+			<div class="checkout-group">
+				<span class="group-label">运费：</span>
+				<span class="group-text">£14.95</span>
+			</div>
+			<div class="checkout-group">
+				<span class="group-label _total_">应付总额：</span>
+				<span class="group-text _total_show">£<%=all_price%></span>
+			</div>
+		</div>
+	</script>
+
+</html>

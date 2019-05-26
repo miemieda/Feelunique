@@ -1,0 +1,83 @@
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+input,
+ol,
+dl,
+dd,
+fieldset,
+textarea,
+select,
+option,
+td,
+th,
+hr {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a,
+u {
+    text-decoration: none;
+}
+
+img {
+    border: none;
+    display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+b,
+strong {
+    font-weight: normal;
+}
+
+body {
+    font-size: 12px;
+    font-family: "微软雅黑";
+}
+
+input,
+area {
+    outline: none;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: left;
+    visibility: hidden;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.border0 {
+    border: none;
+}
+
+.w1190 {
+    width: 1190px;
+    margin: 0 auto;
+}

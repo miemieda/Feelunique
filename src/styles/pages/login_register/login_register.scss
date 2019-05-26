@@ -1,0 +1,417 @@
+@import "../base";
+.header {
+    height: 28px;
+    .w1190 {
+        margin-top: 8px;
+        .logo {
+            img {
+                width: 243px;
+                height: 22px;
+                line-height: 35px;
+            }
+        }
+        .service {
+            li {
+                float: left;
+                padding: 0 15px;
+                border-left: 1px solid #f2f2f2;
+                a {
+                    color: #000;
+                }
+                a:hover {
+                    text-decoration: underline;
+                }
+            }
+            .email {
+                span {
+                    color: #666;
+                }
+            }
+            .china {
+                span {
+                    float: left;
+                    img {
+                        width: 16px;
+                        height: 16px;
+                    }
+                }
+                a {
+                    margin-left: 5px;
+                    float: left;
+                }
+            }
+            .exchange {
+                .down_solid {
+                    float: right;
+                    padding: 5px 10px;
+                    padding-right: 0;
+                    display: block;
+                    img {
+                        width: 12px;
+                        height: 12px;
+                    }
+                }
+                .erl_la_down_menu {
+                    border: rgba(0, 0, 0, .1) 1px solid;
+                    display: none;
+                    padding-top: 5px;
+                    position: absolute;
+                    text-align: center;
+                    width: 130px;
+                    z-index: 502;
+                    left: 980px;
+                    #tb-ma {
+                        span {
+                            float: left;
+                            display: block;
+                            padding: 0 4px;
+                        }
+                    }
+                    li {
+                        float: left;
+                        background: #fff;
+                        border: 1px solid #f2f2f2;
+                        float: none;
+                        line-height: 200%;
+                        padding: 0;
+                        margin: 0;
+                        color: #777;
+                        .tb_parities {
+                            display: inline-block;
+                            height: 16px;
+                            line-height: 16px;
+                            margin: 0 0 4px -4px;
+                            position: relative;
+                            width: 16px;
+                            span {
+                                position: absolute;
+                                top: -5px;
+                                left: 23px;
+                                padding: 3px;
+                                border: 1px solid #ccc;
+                                width: 100px;
+                                z-index: 1009;
+                                background: #eee;
+                            }
+                        }
+                    }
+                }
+            }
+            .bag {
+                ._bag {
+                    width: 15px;
+                    float: left;
+                }
+                a {
+                    float: left;
+                    display: block;
+                    margin-left: 5px;
+                }
+                .zero {
+                    width: 21px;
+                    height: 18px;
+                    float: left;
+                    margin-left: 5px;
+                }
+            }
+            .notice {
+                padding-right: 0;
+            }
+        }
+    }
+}
+
+//main
+.main {
+    background: #F2F2F2;
+    overflow: hidden;
+    ._show {
+        width: 800px;
+        margin: 80px auto;
+        background: #fff;
+        .main_inner {
+            width: 680px;
+            margin: 0 auto;
+            height: 530px;
+            form {
+                h3 {
+                    height: 22px;
+                    padding: 5px 0 15px;
+                    border-bottom: 1px solid #ececec;
+                    padding-top: 28px;
+                    span {
+                        font-size: 16px;
+                        color: #333;
+                        font-weight: 700;
+                        display: inline-block;
+                        float: left;
+                    }
+                    a {
+                        font-size: 14px;
+                        color: #1bbc9b;
+                        font-weight: 100;
+                        display: inline-block;
+                        float: right;
+                    }
+                }
+                input {
+                    vertical-align: middle;
+                    font-size: 14px;
+                    height: 42px;
+                    line-height: 42px;
+                    width: 420px;
+                    box-sizing: border-box;
+                    border: 1px solid #ccc;
+                    margin-left: 130px;
+                    padding-left: 43px;
+                }
+                input:focus {
+                    border-color: #1bbc9b;
+                }
+                ._icon {
+                    position: relative;
+                    ._icon_one {
+                        width: 42px;
+                        height: 42px;
+                        position: absolute;
+                        left: 130px;
+                        top: 20px;
+                    }
+                    ._true {
+                        width: 42px;
+                        height: 42px;
+                        position: absolute;
+                        left: 508px;
+                        top: 20px;
+                        background: url(../../../../img/login-register/true.png) no-repeat center center;
+                    }
+                }
+                ._user {
+                    #username {
+                        margin-top: 20px;
+                    }
+                    ._icon_one {
+                        background: url(../../../../img/login-register/user.png) no-repeat center center;
+                    }
+                }
+                ._password {
+                    ._icon_one {
+                        top: 0px;
+                        background: url(../../../../img/login-register/password.png) no-repeat center center;
+                    }
+                    ._true {
+                        top: 0px;
+                    }
+                }
+                ._v_code {
+                    ._icon_one {
+                        top: 0px;
+                        background: url(../../../../img/login-register/v_code.png) no-repeat center center;
+                    }
+                    #canvas {
+                        position: absolute;
+                        left: 450px;
+                        top: 0px;
+                    }
+                    ._true {
+                        top: 0px;
+                    }
+                }
+                ._p_code {
+                    .p_code_inner {
+                        width:660px;
+                        height:42px;
+                        #phone_code {
+                            width: 292px;
+                            float: left;
+                        }
+                        #get_phone_code {
+                            display: block;
+                            float: left;
+                            width: 118px;
+                            height: 42px;
+                            background: #000;
+                            color: #fff;
+                            margin-left: 8px;
+                            border:none;
+                            line-height: 42px;
+                            text-align: center;
+                        }
+                    }
+                }
+                .forget_pass {
+                    font-size: 12px;
+                    color: #999;
+                    display: block;
+                    margin-right: 130px;
+                }
+                #user_submit {
+                    vertical-align: middle;
+                    font-size: 14px;
+                    height: 42px;
+                    line-height: 42px;
+                    width: 420px;
+                    box-sizing: border-box;
+                    border: 1px solid #ccc;
+                    margin-left: 130px;
+                    padding-left: 43px;
+                    background: #000;
+                    margin-top: 15px;
+                    color: #fff;
+                    outline: none;
+                }
+                #user_submit:hover {
+                    background: #1bbc9b;
+                }
+                ._error {
+                    width: 420px;
+                    height: 20px;
+                    margin: 0 auto;
+                    font-size: 18px;
+                    .msg {
+                        font-size: 12px;
+                        color: #f75354;
+                    }
+                    img {
+                        margin: 3px 3px 0 0;
+                        width: 12px;
+                        float: left;
+                    }
+                }
+            }
+            .quick_login {
+                text-align: center;
+                margin: 40px auto 20px;
+                p {
+                    font-size: 12px;
+                    color: #999;
+                    display: block;
+                    margin: 0 auto 15px;
+                    vertical-align: middle;
+                    position: relative;
+                    background: #fff;
+                    width: 100px;
+                    z-index: 12;
+                }
+                a {
+                    display: block;
+                    float: left;
+                    margin-right: 30px;
+                    img {
+                        width: 24px;
+                        height: 24px;
+                    }
+                }
+                .q_first {
+                    margin-left: 240px;
+                }
+            }
+        }
+    }
+}
+
+.register_main {
+    background: #C9C9C9;
+    .register_show {
+        width: 980px;
+        .register_inner {
+            width: 860px;
+            height: 664px;
+            form {
+                h3 {
+                    margin-bottom: 50px;
+                }
+                ._icon {
+                    .title_one {
+                        width: 80px;
+                        height: 42px;
+                        position: absolute;
+                        left: 230px;
+                        letter-spacing: 6px;
+                        font-size: 14px;
+                        line-height: 42px;
+                        padding: 0 10px;
+                    }
+                    input {
+                        padding-left: 100px;
+                        margin-left: 220px;
+                        font-size: 12px;
+                    }
+                    ._true {
+                        left: 600px;
+                    }
+                }
+                ._user {
+                    .title_one {
+                        top: 20px;
+                    }
+                }
+                ._v_code {
+                    #canvas {
+                        left: 540px;
+                    }
+                }
+                ._password {
+                    .title_one {
+                        letter-spacing: 0px;
+                    }
+                }
+                ._p_code {
+                    .title_one {
+                        letter-spacing: 0px;
+                    }
+                }
+                ._r_password {
+                    ._true {
+                        top: 0;
+                    }
+                }
+                .agree {
+                    margin-left: 90px;
+                    #_agree {
+                        width: 14px;
+                        height: 14px;
+                        float: left;
+                        margin-right: 3px;
+                    }
+                    p {
+                        float: left;
+                    }
+                    a {
+                        float: left;
+                        color: #1bbc9b;
+                    }
+                }
+                #user_register {
+                    background: #000;
+                    margin-top: 15px;
+                    color: #fff;
+                    padding-left: 100px;
+                    margin-left: 220px;
+                    padding-right: 100px;
+                    border: none;
+                }
+                #user_register:hover {
+                    background: #1bbc9b;
+                }
+                .quick_login {
+                    .q_first {
+                        margin-left: 340px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.u_footer {
+    p {
+        background: #fff;
+        text-align: center;
+        margin: 0 auto;
+        font-size: 12px;
+        color: #999;
+        line-height: 10px;
+        padding: 30px 0;
+    }
+}
